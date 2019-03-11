@@ -10,5 +10,6 @@ myQuery = 'select top (50) Names \
          from DATABASE.myTable'
 
 data = myDatabase.queryToDF(myQuery)
+
 --------------------------------------------------------------
 Utilizes: pandas, pyodbc
