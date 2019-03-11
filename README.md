@@ -1,6 +1,6 @@
 # SQLServerHandler
-Small class that handles connections to Microsoft SQL Server
-Reads SQL Queries into Pandas DataFrames
+ - Small class that handles connections to Microsoft SQL Server
+ - Reads SQL Queries into Pandas DataFrames
 --------------------------------------------------------------
 Format:
 
