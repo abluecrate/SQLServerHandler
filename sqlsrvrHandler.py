@@ -15,8 +15,8 @@ class SQLServer():
                                 "Database=" + self.DATABASE + ";"
                                 "Trusted_Connection=yes;")
 
-    def queryToDF(self, query):
-        return pd.read_sql_query(query, self.connection)
+    def queryToDF(self, query, chunksize = None):
+        return pd.read_sql_query(query, self.connection, chunksize = chunksize)
 
 #-------------------------------------------------------------------
 
