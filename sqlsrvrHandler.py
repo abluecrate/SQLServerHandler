@@ -10,15 +10,13 @@ class SQLServer():
         self.connection = self.connect()
 
     def connect(self):
-        connection = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
+        return pyodbc.connect("Driver={SQL Server Native Client 11.0};"
                                 "Server=" + self.SERVER + ";"
                                 "Database=" + self.DATABASE + ";"
                                 "Trusted_Connection=yes;")
-        return connection
 
     def queryToDF(self, query):
-        df = pd.read_sql_query(query, self.connection)
-        return df
+        return pd.read_sql_query(query, self.connection)
 
 #-------------------------------------------------------------------
 
